@@ -9,8 +9,10 @@
 
 << [link to demo presentation slides](#) >>
 
-### Team: << team name >>
-#### << Team Members >>
+### Team: Tomatoes
+#### Yuhan Hu
+#### Fuji Kashimada
+#### Connie Deng
 
 ***
 
