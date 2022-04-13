@@ -1,8 +1,8 @@
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 # CS110 Project Proposal
-# << Project Title >>
+# Tomato Snakes
 ## CS 110 Final Project
-### << Semester, Year >>
+### Spring, 2022
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
 << [repl](#) >>
@@ -12,13 +12,13 @@
 ### Team: Tomatoes
 #### Yuhan Hu
 #### Fuji Kashimada
-#### Connie Deng
+#### 
 
 ***
 
 ## Project Description *(Software Lead)*
 
-<< Give an overview of your project >>
+This is a snake game where a snake will be eating randomly generated emotions. It gets bigger every time it consumes emotions. Different emotions have different effects on the snake. Users have to try their best to not let the snake hit the wall or itself.
 
 ***    
 
@@ -47,10 +47,18 @@
 ## Project Structure *(Software Lead)*
 
 The Project is broken down into the following file structure:
-
 * main.py
 * src
-    * <all of your python files should go here>
+    * Screen.py
+      * Class that controls both starting & ending screen.
+    * PlayingBoard.py
+      * Class that controls the playing screen & plot the emotion to random positions.
+    * OverallSnakeControl.py
+      * Class that assembles all the pieces of snake & control the overall behavior using user input.
+    * SnakeBodyPartsControl.py
+      * Class that controls each piece of the body parts (head, tail, and body) & update their coordinates.
+    * Emotions.py
+      * Relate emotions with effects & generate random emotion for playboard to input.
 * assets
     * <all of your media, i.e. images, font files, etc, should go here)
 * etc
@@ -66,11 +74,11 @@ The Project is broken down into the following file structure:
 
 << Worked as integration specialist by... >>
 
-### Front End Specialist - << name >>
+### Front End Specialist - << Fuji >>
 
 << Front-end lead conducted significant research on... >>
 
-### Back End Specialist - << name >>
+### Back End Specialist - << Yuhan >>
 
 << The back end specialist... >>
 
