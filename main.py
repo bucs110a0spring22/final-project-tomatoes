@@ -1,20 +1,27 @@
 import pygame
-#import your controller
 
-mylist = [int(input("Please enter a number")), int(input("Please enter the same number again")), int(input("Please enter the same number again")), int(input("Please enter the same number again"))]
-print(mylist[0])
-print(mylist[1])
-print(mylist[2])
-print(mylist[3])
-mylist[0],mylist[3] = mylist[3], mylist[0]
+def trackScores(self, score=0):
+  # Keep track of the score while the player is playing the game (maybe a small screen displays the current score on left/right upper corner)
 
-def main():
-    pygame.init()
-    #Create an instance on your controller object
-    #Call your mainloop
-    
-    ###### NOTHING ELSE SHOULD GO IN main(), JUST THE ABOVE 3 LINES OF CODE ######
+def trackNumberOfEmotions(self):
+  # Tracks the number of different type of emotion being eaten
+  happyCount = 0
+  happyList = []
+  sadCount = 0
+  sadList = []
+  angryCount = 0
+  angryList = []
+  scaredCount = 0
+  scaredList = []
+  excitedCount = 0
+  excitedList = []
+  emotionLess = [happyList, sadList, angryList, scaredList, excitedList]
+  
+def finalScoreHighest(self,history_highest):
+  # Keep track of the history highest score (only saves the highest) & compare with the curren score
 
-# https://codefather.tech/blog/if-name-main-python/
-if __name__ == '__main__':
-    main()
+def finalScreenWords(self):
+  # Displays congrats if history > curren; displays try again if not
+
+var = Emotions.generateEmotions()
+emotion1 = Emotions(var[0], var[1])  

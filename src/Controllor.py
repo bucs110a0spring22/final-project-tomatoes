@@ -1,9 +1,13 @@
+import pygame 
 
 class Controller:
   
   def __init__(self):
     #setup pygame data
-    
+     while time.sleep(1):
+  def userInput:
+    # Detects and takes user input and generate the desired coordinates of the input
+  
   def mainloop(self):
     #select state loop
     
