@@ -18,14 +18,25 @@ class Controller:
     #select state loop
      while True:
       if(self.state == "GAME"):
-        if self.screen.playBoard():
+        input = None
+        pygame.time.wait(500)
+        for event in pygame.event.get():
+          if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
+              input = "Right"
+            if event.key == pygame.K_LEFT:
+              input = "Left"
+            if event.key == pygame.K_DOWN:
+              input = "Down"
+            if event.key == pygame.K_UP:
+              input = "Up"
+          if event.type == pygame.QUIT:
+            exit()
+        if self.screen.playBoard(input):
           self.state = "GAME OVER"
       elif(self.state == "GAME OVER"):
         if self.screen.exitScreen():
-          print("sleppy")
+          exit()
       elif (self.state == "GAME ON"):
         if self.screen.startScreen():
           self.state = "GAME"
-      
-  # def userInput(self):
-    

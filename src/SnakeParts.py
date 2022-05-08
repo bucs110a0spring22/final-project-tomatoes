@@ -1,37 +1,48 @@
 import pygame
-from SankeBodyParts import SnakeBodyPartsControl
 from pygame.locals import *
 
 class SnakeParts(pygame.sprite.Sprite):
   def __init__(self, image, location, direction):
     # Initialize the snake
-    self.image = pygame.image.load("Head")
+    pygame.sprite.Sprite.__init__(self)
+    self.image = pygame.image.load(image)
+    self.image = pygame.transform.smoothscale(self.image, (50,50))
     self.rect = location
     self.direction = direction
 
-  def headDirectionControl(self, direction="", status=""):
+  def headDirectionControl(self, direction, status=""):
     # Updates the heading & status of head when game is on using the input
     self.direction = direction
+    haha = None
     if status == "Alive":
       if direction == "Right":
-        pygame.image.load("assets/SnakeHeadRight")
+        haha = pygame.image.load("assets/SnakeParts/SnakeHeadRight.png")
       if direction == "Left":
-        pygame.image.load("assets/SnakeHeadLeft")
+        haha = pygame.image.load("assets/SnakeParts/SnakeHeadLeft.png")
       if direction == "Up":
-        pygame.image.load("assets/SnakeHeadUp")
+        haha = pygame.image.load("assets/SnakeParts/SnakeHeadUp.png")
       if direction == "Down":
-        pygame.image.load("assets/SnakeHeadDown")
+        haha = pygame.image.load("assets/SnakeParts/SnakeHeadDown.png")
     else:
       if direction == "Right":
-        pygame.image.load("assets/SnakeHeadDeadRight")
+        haha = pygame.image.load("assets/SnakeParts/SnakeHeadDeadRight.png")
       if direction == "Left":
-        pygame.image.load("assets/SnakeHeadDeadLeft")
+        haha = pygame.image.load("assets/SnakeParts/SnakeHeadDeadLeft.png")
       if direction == "Up":
-        pygame.image.load("assets/SnakeHeadDeadUp")
+        haha = pygame.image.load("assets/SnakeParts/SnakeHeadDeadUp.png")
       if direction == "Down":
-        pygame.image.load("assets/SnakeHeadDeadDown")
+        haha = pygame.image.load("assets/Snakeparts/SnakeHeadDeadDown.png")
+    self.image = pygame.transform.smoothscale(haha, (50,50))
     
   def headLocationControl(self, x=0, y=0):
     # Updates the coordinates of head when they're moved using the input
-    self.rect[0] = x
-    self.rect[1] = y
+    self.rect = (x,y)
+  def inverse (self):
+    if self.direction == "Right":
+      return "Left"
+    if self.direction == "Left":
+      return "Right"
+    if self.direction == "Up":
+      return "Down"
+    if self.direction == "Down":
+      return "Up"
