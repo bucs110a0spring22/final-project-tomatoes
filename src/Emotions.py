@@ -8,15 +8,15 @@ class Emotions(pygame.sprite.Sprite):
     self.rec = location
     self.type = type
     if type == "Happy":
-      self.image = pygame.image.load("Happy.png")
+      self.image = pygame.image.load("assets/Happy.png")
     if type == "Sad":
-      self.image = pygame.image.load("Sad.png")
+      self.image = pygame.image.load("assets/Sad.png")
     if type == "Angry":
-      self.image = pygame.image.load("Angry.png")
+      self.image = pygame.image.load("assets/Angry.png")
     if type == "Scared":
-      self.image = pygame.image.load("Scared.png")
+      self.image = pygame.image.load("assets/Scared.png")
     if type == "Excited":
-      self.image = pygame.image.load("Excited.png")
+      self.image = pygame.image.load("assets/Excited.png")
     
   @staticmethod #Allow the method to be called even before the object is made
   def generateEmotions ():

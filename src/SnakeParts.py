@@ -14,36 +14,24 @@ class SnakeParts(pygame.sprite.Sprite):
     self.direction = direction
     if status == "Alive":
       if direction == "Right":
-        pygame.image.load("SnakeHeadRight")
+        pygame.image.load("assets/SnakeHeadRight")
       if direction == "Left":
-        pygame.image.load("SnakeHeadLeft")
+        pygame.image.load("assets/SnakeHeadLeft")
       if direction == "Up":
-        pygame.image.load("SnakeHeadUp")
+        pygame.image.load("assets/SnakeHeadUp")
       if direction == "Down":
-        pygame.image.load("SnakeHeadDown")
+        pygame.image.load("assets/SnakeHeadDown")
     else:
       if direction == "Right":
-        pygame.image.load("SnakeHeadDeadRight")
+        pygame.image.load("assets/SnakeHeadDeadRight")
       if direction == "Left":
-        pygame.image.load("SnakeHeadDeadLeft")
+        pygame.image.load("assets/SnakeHeadDeadLeft")
       if direction == "Up":
-        pygame.image.load("SnakeHeadDeadUp")
+        pygame.image.load("assets/SnakeHeadDeadUp")
       if direction == "Down":
-        pygame.image.load("SnakeHeadDeadDown")
+        pygame.image.load("assets/SnakeHeadDeadDown")
     
   def headLocationControl(self, x=0, y=0):
     # Updates the coordinates of head when they're moved using the input
     self.rect[0] = x
     self.rect[1] = y
-
-  def tailDirectionControl(self, direction=""):
-    # Update the direction of the tail & rotate the image accordingly
-    self.direction = direction
-    if direction=="Right":
-      pygame.image.load("TailRight")
-    if direction=="Left":
-      pygame.image.load("TailLeft")
-    if direction=="Up":
-      pygame.image.load("TailUp")
-    if direction=="Down":
-      pygame.image.load("TailDown")
