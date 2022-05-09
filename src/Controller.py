@@ -5,7 +5,11 @@ from src.Screens import Screen
 
 class Controller:
   def __init__(self):
-    #setup pygame data
+    ''' 
+    Initialize pygame, the state of the game, the font, and the screen.
+	  args: None
+	  return: None
+    '''
     pygame.init()
     pygame.font.init()
     # self.emotion = pygame.sprite.Group()
@@ -15,8 +19,12 @@ class Controller:
     self.screen = Screen()
   
   def mainloop(self):
-    #select state loop
-     while True:
+    '''
+    Controls the time that the frames refresh; takes the direction input from the user; and call corrosponding screen based on the status of the game.
+    args: None
+    return: None
+    '''
+    while True:
       if(self.state == "GAME"):
         input = None
         pygame.time.wait(500)
