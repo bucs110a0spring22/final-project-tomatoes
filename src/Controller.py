@@ -40,7 +40,8 @@ class Controller:
               input = "Up"
           if event.type == pygame.QUIT:
             exit()
-        if self.screen.playBoard(input):
+        self.screen.playBoard()
+        if self.screen.drawSnake(input):
           self.state = "GAME OVER"
       elif(self.state == "GAME OVER"):
         if self.screen.exitScreen():

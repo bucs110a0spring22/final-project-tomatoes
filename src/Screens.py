@@ -38,13 +38,13 @@ class Screen:
       pygame.display.flip()
       mouth = pygame.mouse.get_pos()
       for event in pygame.event.get():
-        if event.type == QUIT:
+        if event.type == pygame.QUIT:
           exit()
-        if event.type == MOUSEBUTTONDOWN:
+        if event.type == pygame.MOUSEBUTTONDOWN:
           if mouth[1] > 300 and mouth[1] < 550:
             return True
   
-  def playBoard(self, input = None):
+  def playBoard(self):
     self.background = pygame.Surface(self.surface.get_size())
     self.background = self.background.convert()
     self.background.fill((45, 115, 51))
@@ -55,6 +55,10 @@ class Screen:
     pygame.draw.line(self.background,(0, 0, 0), (0, 850), (700, 850), 5)
     pygame.draw.line(self.background,(0, 0, 0), (700, 850), (700, 100), 5)
     pygame.draw.line(self.background,(0, 0, 0), (700, 100), (0, 100), 5)
+    self.surface.blit(scoreLable, (130, 25))
+    pygame.display.flip()
+
+  def drawSnake (self, input=None):
     head = self.snake.snakeParts[0]
     if input == None or input == head.inverse():
       input = head.direction
@@ -94,7 +98,6 @@ class Screen:
     initialSnake.draw(self.background)
     # initialEmotions = pygame.sprite.Group()
     self.surface.blit(self.background,(0,0))
-    self.surface.blit(scoreLable, (130, 25))
     pygame.display.flip()
     if status == "Dead":
       pygame.time.wait(1000)
