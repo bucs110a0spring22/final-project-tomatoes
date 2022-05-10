@@ -1,4 +1,3 @@
-#Ask about check head status: How to shorten it
 import pygame
 from src.SnakeBodyPartsControl import SnakeBodyPartsControl
 from src.SnakeParts import SnakeParts
@@ -31,9 +30,9 @@ class Screen:
 
   def exitScreen(self, imageFile=""):
     '''
-    Calls the end screen (congrats/try again) after game over
-    args (str): Takes in the return from the score to display the right end screen
-    return (boolean): Returns a boolean for the controlor to call the start screen for botton detection
+    Calls the end screen (congrats/try again) after game over.
+    args (str): Takes in the return from the score to display the right end screen.
+    return (boolean): Returns a boolean for the controlor to call the start screen for button detection.
     '''
     image = pygame.image.load(imageFile)
     image = pygame.transform.smoothscale(image,     self.screenDimension)
@@ -116,24 +115,20 @@ class Screen:
     head.headDirectionControl(input, status)
     headRect = ()
     if head.direction == "Right":
-      headRect = (head.rect[0]+self.blockSize, head.rect[1])
-    elif head.direction == "Left":
-      headRect = (head.rect[0]-self.blockSize, head.rect[1])
-    elif head.direction == "Up":
-      headRect = (head.rect[0], head.rect[1]-self.blockSize)
-    elif head.direction == "Down":
-      headRect = (head.rect[0], head.rect[1]+self.blockSize)
-    if head.direction == "Left":
-      if head.rect[0] - self.blockSize < 0:
-        status = "Dead"
-    if head.direction == "Right":
+      headRect = (head.rect[0] + self.blockSize, head.rect[1])
       if head.rect[0] + self.blockSize >= 700:
         status = "Dead"
-    if head.direction == "Up":
+    elif head.direction == "Left":
+      headRect = (head.rect[0] - self.blockSize, head.rect[1])
+      if head.rect[0] - self.blockSize < 0:
+        status = "Dead"
+    elif head.direction == "Up":
+      headRect = (head.rect[0], head.rect[1] - self.blockSize)
       if head.rect[1] - self.blockSize < 100:
         status = "Dead"
-    if head.direction == "Down":
-      if head.rect[1] + self.blockSize >=850:
+    elif head.direction == "Down":
+      headRect = (head.rect[0], head.rect[1] + self.blockSize)
+      if head.rect[1] + self.blockSize >= 850:
         status = "Dead"
     for i in self.snake.snakeParts[1:]:
       if i.rect == headRect:
@@ -158,7 +153,7 @@ class Screen:
 
   def eating (self):
     '''
-    Kill the emotion after it being eatean & keep track of the point gain
+    Kill the emotion after it being eaten & keep track of the point gain
     args: None
     return (int): Return the total current points
     '''

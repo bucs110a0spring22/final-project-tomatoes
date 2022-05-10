@@ -17,7 +17,7 @@ class Controller:
   
   def mainloop(self):
     '''
-    Controls the time that the frames refresh; takes the direction input from the user; and call corrosponding screen based on the status of the game.
+    Controls the time that the frames refresh; takes the direction input from the user; and call corresponding screen based on the status of the game.
     args: None
     return: None
     '''
