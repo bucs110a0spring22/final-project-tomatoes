@@ -5,13 +5,13 @@
 ### Spring, 2022
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
-<< [repl](#) >>
+(https://github.com/bucs110a0spring22/final-project-tomatoes.git)
 
-<< [[link to demo presentation slides]](https://docs.google.com/presentation/d/1wEoLZi4BBrbQxKLEegGhk7z3Ufgi07y9g8fegxtoLoQ/edit#slide=id.p)(#) >>
+(https://docs.google.com/presentation/d/1wEoLZi4BBrbQxKLEegGhk7z3Ufgi07y9g8fegxtoLoQ/edit#slide=id.p) 
 
 ### Team: Tomatoes
 #### Yuhan Hu
-#### Fuji Kashimada
+#### Fujiko Kashimada
 
 ***
 
@@ -92,7 +92,7 @@ The Project is broken down into the following file structure:
 
 ### Software Lead - None
 
-<< Worked as integration specialist by... >>
+
 
 ### Front End Specialist - Fuji
 
@@ -104,8 +104,8 @@ All the logic of this game. Classes inclues Controller, Emotions, SnakeBodyParts
 
 ## Testing *(Software Lead)*
 
-* << Describe your testing strategy for your project. >>
-    * << Example >>
+* Run it after every section is finished and adjust based on the output
+    * Run after startscreen is finished, then the dimension of the start botton is adjusted.
 
 ## ATP
 
