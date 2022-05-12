@@ -5,9 +5,13 @@
 ### Spring, 2022
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
+Github link:
 (https://github.com/bucs110a0spring22/final-project-tomatoes.git)
 
-(https://docs.google.com/presentation/d/1wEoLZi4BBrbQxKLEegGhk7z3Ufgi07y9g8fegxtoLoQ/edit#slide=id.p) 
+Link to presentation: (https://docs.google.com/presentation/d/1wEoLZi4BBrbQxKLEegGhk7z3Ufgi07y9g8fegxtoLoQ/edit#slide=id.p) 
+
+Link to demo video: (https://drive.google.com/file/d/1lyb8YZnMgcE3CsaQ0UdAPePzZDeAneOq/view?usp=sharing)
+
 
 ### Team: Tomatoes
 #### Yuhan Hu
@@ -96,7 +100,7 @@ The Project is broken down into the following file structure:
 
 ### Front End Specialist - Fuji
 
-All the diaplay of this game. Classes inclues Screens. Also responseble for all the drawing of this game.
+All the display of this game. Classes includes Screens. Also responsible for all the drawing of this game.
 
 ### Back End Specialist -  Yuhan 
 

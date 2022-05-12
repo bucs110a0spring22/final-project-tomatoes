@@ -1,3 +1,5 @@
+#Click on exit once finished play, otherwise history highesr score won't be rewrite
+
 import pygame
 from src.Controller import Controller
 
