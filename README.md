@@ -10,9 +10,6 @@ Github link:
 
 Link to presentation: (https://docs.google.com/presentation/d/1wEoLZi4BBrbQxKLEegGhk7z3Ufgi07y9g8fegxtoLoQ/edit#slide=id.p) 
 
-Link to demo video: (https://drive.google.com/file/d/1lyb8YZnMgcE3CsaQ0UdAPePzZDeAneOq/view?usp=sharing)
-
-
 ### Team: Tomatoes
 #### Yuhan Hu
 #### Fujiko Kashimada
